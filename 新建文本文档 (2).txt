@@ -1,1 +1,170 @@
-this is a test
+宋@LAPTOP-UBDK8S94 MINGW64 ~/Desktop (master)
+$ cd d:
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d
+$ git clone https://github.com/2368250590/Mytest.git
+Cloning into 'Mytest'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d
+$ git status -s
+fatal: Not a git repository (or any of the parent directories): .git
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d
+$ git init
+Initialized empty Git repository in D:/.git/
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d (master)
+$ cd Mytest
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git inti
+git: 'inti' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git init
+Reinitialized existing Git repository in D:/Mytest/.git/
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git add .
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git commit -m "第一次测试"
+[master ab68f63] 第一次测试
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git push -u origin master
+bash.exe: warning: could not find /tmp, please create!
+Username for 'https://github.com': 2368250590@qq.com
+bash.exe: warning: could not find /tmp, please create!
+Password for 'https://2368250590@qq.com@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/2368250590/Mytest.git
+   64c443b..ab68f63  master -> master
+Branch master set up to track remote branch master from origin.
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git commit -m "第一次测试"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git remote add origin https://github.com/2368250590/.git
+fatal: remote origin already exists.
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ ^C
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ ^C
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243 (2).txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git add .
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243 (2).txt"
+
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ @git commit -m "第二次提交"
+bash: @git: command not found
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git commit -m "第二次提交"
+[master 9937212] 第二次提交
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243 (2).txt"
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git push -u origin master
+bash.exe: warning: could not find /tmp, please create!
+Username for 'https://github.com': 2368250590@qq.com
+bash.exe: warning: could not find /tmp, please create!
+Password for 'https://2368250590@qq.com@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 337 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/2368250590/Mytest.git
+   ab68f63..9937212  master -> master
+Branch master set up to track remote branch master from origin.
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git commit -m "第二次提交"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git remote add origin fatal: remote origin already exists.
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$ git remote add origin https://github.com/2368250590/.git
+fatal: remote origin already exists.
+
+宋@LAPTOP-UBDK8S94 MINGW64 /d/Mytest (master)
+$
